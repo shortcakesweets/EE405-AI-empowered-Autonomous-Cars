@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -O3 -DNDEBUG  -shared -Wl,-soname,libopen_urg_sensor.so -o /home/team2/catkin_ws/devel/lib/libopen_urg_sensor.so CMakeFiles/open_urg_sensor.dir/current/samples/open_urg_sensor.c.o -Wl,-rpath,/home/team2/catkin_ws/devel/lib: -lm /home/team2/catkin_ws/devel/lib/libliburg_c.so -lrt -lm 

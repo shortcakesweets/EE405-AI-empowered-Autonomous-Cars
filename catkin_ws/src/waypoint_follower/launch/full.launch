@@ -1,0 +1,39 @@
+<launch>
+
+<!-- rosrun waypoint_follower wpt_loader_real_car.py -->
+
+<node name="node_waypoint_follower" pkg="waypoint_follower" type="wpt_loader_real_car.py">
+</node>
+
+
+<!-- rosrun waypoint_follower wpt_loader_real_car.py -->
+<node name="node_map_server" pkg="map_server" type="map_server" args="$(find waypoint_follower)/final_map.yaml">
+</node>
+
+
+<!-- rosrun urg_node urg_node _ip_address:=192.168.0.10 -->
+<node name="node_urg_node" pkg="urg_node" type="urg_node" args="_ip_address:=192.168.0.10">
+</node>
+
+
+<!-- rosrun rosserial_python serial_node.py _port:=/dev/ttyACM1 _baud:=57600 -->
+<!--
+<node name="node_rosserial" pkg="rosserial_python" type="serial_node.py" args="_port:=/dev/ttyACM1 _baud:=57600">
+</node>
+-->
+
+
+<!-- rosrun localization localization -->
+
+<node name="node_localization" pkg="localization" type="localization">
+</node>
+
+
+<node name="node_planner" pkg="waypoint_follower" type="my_local_planner.py">
+</node>
+
+
+<!-- launch darknet and camera -->
+
+
+</launch>

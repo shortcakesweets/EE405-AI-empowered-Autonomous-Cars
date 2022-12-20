@@ -1,0 +1,7 @@
+waypoint ver_1
+ ( -8 )
+ - wrong. late spin
+
+waypoint ver_2
+ ( -7.9 )
+ - 

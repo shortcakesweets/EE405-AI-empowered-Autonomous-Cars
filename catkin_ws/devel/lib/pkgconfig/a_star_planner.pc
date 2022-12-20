@@ -1,0 +1,8 @@
+prefix=/home/team2/catkin_ws/devel
+
+Name: a_star_planner
+Description: Description of a_star_planner
+Version: 0.0.0
+Cflags: -I/home/team2/catkin_ws/src/a_star_planner/include
+Libs: -L${prefix}/lib -la_star_lib
+Requires: roscpp rospy std_msgs

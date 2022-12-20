@@ -1,0 +1,8 @@
+prefix=/home/team2/catkin_ws/devel
+
+Name: openslam_gmapping
+Description: Description of openslam_gmapping
+Version: 0.2.1
+Cflags: -I/home/team2/catkin_ws/src/gmapping/include -I/home/team2/catkin_ws/devel/include
+Libs: -L${prefix}/lib -lutils -lsensor_base -lsensor_odometry -lsensor_range -llog -lconfigfile -lscanmatcher -lgridfastslam
+Requires: 

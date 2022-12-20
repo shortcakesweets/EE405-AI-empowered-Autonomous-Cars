@@ -1,0 +1,9 @@
+<launch>
+
+<include file="$(find darknet_ros)/launch/run.launch"/>
+<include file="$(find realsense2_camera)/launch/rs_camera.launch"/>
+
+<node name="node_traffic_cog" pkg="darknet_ros" type="traffic_color_node_new.py">
+</node>
+
+</launch>

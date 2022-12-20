@@ -1,0 +1,1 @@
+/usr/bin/cc -O3 -DNDEBUG  -rdynamic CMakeFiles/find_port.dir/current/samples/find_port.c.o  -o /home/team2/catkin_ws/devel/lib/urg_c/find_port -Wl,-rpath,/home/team2/catkin_ws/devel/lib: /home/team2/catkin_ws/devel/lib/libopen_urg_sensor.so /home/team2/catkin_ws/devel/lib/libliburg_c.so -lrt -lm 
